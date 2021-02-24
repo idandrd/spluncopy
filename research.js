@@ -26,7 +26,7 @@ function copyTable() {
 
 function getCopyButton() {
   let element = document.createElement("a")
-  element.onclick = "copyTable()"
+  element.onclick = copyTable
   element.href = "#"
   element.className = "copy btn-pill btn-square shared-jobstatus-buttons-sharebutton"
   element.innerHTML = '<i class="icon-clone"></i><span class="hide-text">Copy</span>'
